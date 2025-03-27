@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# To-Do List Application - React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This is a simple to-do list application built using React. The app allows users to:
 
-In the project directory, you can run:
+- Add new items to the to-do list.
+- Remove items from the list.
+- Edit contents of the to-do item in the list
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Add Item**: Enter a to-do item in the input field and click "ADD" to add it to the list.
+2. **Edit**: Click the edit icon to edit the contents of the selected to-do item
+3. **Remove Item**: Click the trash icon to remove a to-do item.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React** - JavaScript library for building user interfaces.
+- **CSS** - For styling the application.
+- **lucide-react** - For icons to use in the project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
 
-### `npm run build`
+1. **State Management**: The app uses React's `useState` hook to manage the state of the to-do items (`list`) and the input field (`userInput`).
+2. **Adding Items**: When the user types in the input field and clicks the "ADD" button, the new item is added to the `list` array.
+3. **Removing Items**: When the user clicks the trash icon, the `deleteItem` function filters out the item from the list by its ID.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Challenges Faced
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **State Management**: The most challenging part was managing the state of the items and ensuring updates were properly reflected.
+- **Styling**: Deciding on the layout, design, simpleness yet responsiveness of the app was a challenge.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Improvements
 
-### `npm run eject`
+- **Mark as Completed**: Click the "Mark Completed" button to toggle the completion status of the item.
+- **Local Storage**: Implement functionality to store to-do items in `localStorage` so that the list persists even after the browser is refreshed/closed.
+- **Filtering**: Add filtering options to view tasks based on their completion status.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tutorials Followed
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No tutorial was directly followed, but I researched React state management concepts and how to use `useState` to manage an array of items. 
